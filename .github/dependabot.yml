@@ -1,0 +1,16 @@
+version: 2
+updates:
+  # npm dependencies for each plugin's scripts/ package.
+  # The glob covers every plugins/<name>/scripts/package.json; dirs without a
+  # manifest are skipped automatically.
+  - package-ecosystem: "npm"
+    directories:
+      - "/plugins/*/scripts"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      # Roll routine updates into one PR per directory to keep noise down.
+      npm-dependencies:
+        patterns:
+          - "*"
