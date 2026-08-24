@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   review:
-    uses: LEA-Product-and-Engineering/.github/.github/workflows/llm-review.yml@f52962796957a6de97e64f752b45b9511fbb989e
+    uses: LEA-Product-and-Engineering/.github/.github/workflows/llm-review.yml@a59f5c094304e86e8762649ca484f3ba0164272a
     secrets:
       anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
       review_app_id: ${{ secrets.LEA_REVIEW_APP_ID }}
