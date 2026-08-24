@@ -78,3 +78,4 @@ The script requires a clean working directory on the `main` branch and the [GitH
 ## Support
 
 Contact [claude-skills@getlea.io](mailto:claude-skills@getlea.io) for help with setup or issues.
+greptile login probe 1787600434
